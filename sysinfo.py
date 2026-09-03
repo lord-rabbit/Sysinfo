@@ -1,9 +1,13 @@
-import tkinter as tk
-import sys
-import platform
-import winreg
-import subprocess
+#
+#    SYSINFO - A PYTHON BASED GUI WHICH SHOWS SYSTEM INFORMATION FOR WINDOWS.
+#
+import tkinter as tk #for gui
+import sys #system related commands
+import platform # fetch system information
+import winreg # used to determine some information
+import subprocess # used to receive gpu
 
+# determining windows 11 or 10
 set11Flag = 0;
 
 def getWindowsVersion():
@@ -79,7 +83,7 @@ button.grid(row=12,column=1,padx=10,pady=10)
 
 footer = tk.Frame(window)
 footer.grid(row=13,column=0,columnspan=2,sticky="ew",padx=10,pady=5)
-footerLabel = tk.Label(footer,text="made by SHEN with love. (https://github.com/khuman-shen)",fg="gray")
+footerLabel = tk.Label(footer,text="made by 0xrabbit with love. (https://github.com/lord-rabbit)",fg="gray")
 footerLabel.pack()
 
 window.mainloop()
