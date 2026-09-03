@@ -57,10 +57,12 @@ def getGpu():
 
     return ", ".join(gpus) if gpus else "Unknown"
 
+# MAIN CODE
 
 window = tk.Tk()
 window.title("Sysinfo - View System Information")
 window.geometry("400x350")
+window.resizable(False,False)
 
 showInfo(window,"Operating System :",getWindowsVersion(),0,0)
 if set11Flag == 0:
